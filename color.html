@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./color.css">
+</head>
+<body>
+        <div id="container">
+        <span id="colorName"></span>
+        <h1>COLOR HUNT</h1>
+        <button id="button">Pass</button>
+        </div>
+
+      <script> 
+         
+          const setbg = () => {
+          const colorName = document.getElementById('colorName');
+          const randomColor = Math.floor(Math.random()*16777215).toString(16);
+          document.body.style.backgroundColor = "#" + randomColor;
+          console.log(randomColor)
+          colorName.innerHTML = "#" + randomColor;
+        }
+        //function call Here
+        button.addEventListener('click', setbg);
+        setbg();
+
+        
+      
+ /* setInterval(() => {
+  setbg();
+ }, 1500);  */ 
+</script>
+</body>
+</html>

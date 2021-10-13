@@ -1,0 +1,21 @@
+#container{
+    /* background-color: antiquewhite; */
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:all 2s ease;
+}
+
+#container > #button{
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px 25px;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 7px;
+    transition:all 1s ease;
+
+}
